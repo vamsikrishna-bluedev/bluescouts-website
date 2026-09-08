@@ -23,7 +23,10 @@ function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
-      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+      <nav
+        className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8"
+        aria-label="Main navigation"
+      >
         {/* Logo / Company Name */}
         <Link
           to="/"
@@ -53,14 +56,16 @@ function Navbar() {
             ))}
           </div>
 
-          {/* CTA */}
+          {/* Desktop CTA */}
           <Link
             to="/stock-intelligence"
             className="group flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition-transform hover:-translate-y-0.5"
           >
             Explore Platform
+
             <ArrowUpRight
               size={15}
+              aria-hidden="true"
               className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
             />
           </Link>
@@ -71,16 +76,24 @@ function Navbar() {
           type="button"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
           onClick={() => setIsMenuOpen((current) => !current)}
           className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 transition-colors hover:bg-black/5 lg:hidden"
         >
-          {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          {isMenuOpen ? (
+            <X size={20} aria-hidden="true" />
+          ) : (
+            <Menu size={20} aria-hidden="true" />
+          )}
         </button>
       </nav>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="border-t border-black/10 bg-white lg:hidden">
+        <div
+          id="mobile-navigation"
+          className="border-t border-black/10 bg-white lg:hidden"
+        >
           <div className="mx-auto flex max-w-7xl flex-col px-6 py-5">
             {navigation.map((item) => (
               <NavLink
@@ -99,13 +112,18 @@ function Navbar() {
               </NavLink>
             ))}
 
+            {/* Mobile CTA */}
             <Link
               to="/stock-intelligence"
               onClick={closeMenu}
               className="mt-5 flex items-center justify-center gap-2 rounded-full bg-black px-5 py-3 text-sm font-medium text-white"
             >
               Explore Platform
-              <ArrowUpRight size={15} />
+
+              <ArrowUpRight
+                size={15}
+                aria-hidden="true"
+              />
             </Link>
           </div>
         </div>
