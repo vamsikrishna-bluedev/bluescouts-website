@@ -9,6 +9,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: #000;
+  background: #fff;
 }
 
 * {
@@ -22,4 +25,41 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  background: #fff;
+  color: #000;
+}
+
+/*
+  Keyboard accessibility
+  Keeps focus clearly visible without affecting mouse users.
+*/
+:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 4px;
+}
+
+/*
+  Prevent images from overflowing their containers.
+*/
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*
+  Respect users who prefer reduced motion.
+*/
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -27,13 +27,22 @@ function Navbar() {
         className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8"
         aria-label="Main navigation"
       >
-        {/* Logo / Company Name */}
+        {/* Logo */}
         <Link
           to="/"
           onClick={closeMenu}
-          className="text-lg font-semibold tracking-tight"
+          className="flex items-center gap-3"
+          aria-label="Blue Scouts Group Home"
         >
-          Blue Scouts Group
+          <img
+            src="/favicon.svg"
+            alt="Blue Scouts Group"
+            className="h-9 w-9 object-contain"
+          />
+
+          <span className="text-lg font-semibold tracking-tight">
+            Blue Scouts Group
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -56,7 +65,7 @@ function Navbar() {
             ))}
           </div>
 
-          {/* Desktop CTA */}
+          {/* CTA */}
           <Link
             to="/stock-intelligence"
             className="group flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition-transform hover:-translate-y-0.5"
@@ -112,7 +121,6 @@ function Navbar() {
               </NavLink>
             ))}
 
-            {/* Mobile CTA */}
             <Link
               to="/stock-intelligence"
               onClick={closeMenu}

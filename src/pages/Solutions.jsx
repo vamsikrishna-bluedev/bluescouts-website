@@ -17,11 +17,14 @@ function Solutions() {
       ========================================================= */}
       <section className="border-b border-black/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
+          <div className="grid gap-16 lg:grid-cols-12 lg:items-end">
 
             <div className="lg:col-span-8">
               <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-black" />
+                <span
+                  className="h-px w-8 bg-black"
+                  aria-hidden="true"
+                />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   Our Solutions
@@ -55,7 +58,10 @@ function Solutions() {
 
             <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-black" />
+                <span
+                  className="h-px w-8 bg-black"
+                  aria-hidden="true"
+                />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   Core Capabilities
@@ -89,6 +95,7 @@ function Solutions() {
               <Database
                 size={27}
                 strokeWidth={1.5}
+                aria-hidden="true"
               />
 
               <div className="mt-16 flex items-start justify-between gap-6">
@@ -109,6 +116,7 @@ function Solutions() {
 
                 <ArrowRight
                   size={18}
+                  aria-hidden="true"
                   className="mt-1 shrink-0 text-black/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-black"
                 />
               </div>
@@ -120,6 +128,7 @@ function Solutions() {
               <FileSearch
                 size={27}
                 strokeWidth={1.5}
+                aria-hidden="true"
               />
 
               <div className="mt-16 flex items-start justify-between gap-6">
@@ -140,6 +149,7 @@ function Solutions() {
 
                 <ArrowRight
                   size={18}
+                  aria-hidden="true"
                   className="mt-1 shrink-0 text-black/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-black"
                 />
               </div>
@@ -151,6 +161,7 @@ function Solutions() {
               <Brain
                 size={27}
                 strokeWidth={1.5}
+                aria-hidden="true"
               />
 
               <div className="mt-16 flex items-start justify-between gap-6">
@@ -171,6 +182,7 @@ function Solutions() {
 
                 <ArrowRight
                   size={18}
+                  aria-hidden="true"
                   className="mt-1 shrink-0 text-black/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-black"
                 />
               </div>
@@ -182,6 +194,7 @@ function Solutions() {
               <BarChart3
                 size={27}
                 strokeWidth={1.5}
+                aria-hidden="true"
               />
 
               <div className="mt-16 flex items-start justify-between gap-6">
@@ -202,6 +215,7 @@ function Solutions() {
 
                 <ArrowRight
                   size={18}
+                  aria-hidden="true"
                   className="mt-1 shrink-0 text-black/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-black"
                 />
               </div>
@@ -222,7 +236,10 @@ function Solutions() {
 
             <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-black" />
+                <span
+                  className="h-px w-8 bg-black"
+                  aria-hidden="true"
+                />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   How It Connects
@@ -235,8 +252,7 @@ function Solutions() {
             </div>
 
             <div className="lg:col-span-7 lg:col-start-6">
-
-              <div className="space-y-0">
+              <div>
 
                 {/* Step 01 */}
                 <div className="grid grid-cols-[48px_1fr] gap-6 border-t border-black/10 py-7">
@@ -314,8 +330,8 @@ function Solutions() {
                 </div>
 
               </div>
-
             </div>
+
           </div>
         </div>
       </section>
@@ -330,7 +346,10 @@ function Solutions() {
           <div className="flex items-end justify-between gap-8">
             <div>
               <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-black" />
+                <span
+                  className="h-px w-8 bg-black"
+                  aria-hidden="true"
+                />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   Featured Solution
@@ -350,6 +369,7 @@ function Solutions() {
 
               <ArrowRight
                 size={16}
+                aria-hidden="true"
                 className="transition-transform duration-300 group-hover:translate-x-1"
               />
             </Link>
@@ -362,7 +382,10 @@ function Solutions() {
               <div className="p-8 sm:p-10 lg:col-span-7 lg:p-14">
 
                 <div className="flex items-center gap-3">
-                  <span className="h-px w-8 bg-white" />
+                  <span
+                    className="h-px w-8 bg-white"
+                    aria-hidden="true"
+                  />
 
                   <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">
                     Intelligence Platform
@@ -387,6 +410,7 @@ function Solutions() {
 
                   <ArrowRight
                     size={16}
+                    aria-hidden="true"
                     className="transition-transform duration-300 group-hover:translate-x-1"
                   />
                 </Link>
@@ -398,6 +422,7 @@ function Solutions() {
 
                 <div
                   className="absolute inset-0 opacity-[0.12]"
+                  aria-hidden="true"
                   style={{
                     backgroundImage: `
                       linear-gradient(to right, #fff 1px, transparent 1px),
@@ -419,6 +444,7 @@ function Solutions() {
                         <Layers3
                           size={18}
                           strokeWidth={1.5}
+                          aria-hidden="true"
                           className="text-white/45"
                         />
                       </div>
@@ -464,6 +490,7 @@ function Solutions() {
 
             <ArrowRight
               size={16}
+              aria-hidden="true"
               className="transition-transform duration-300 group-hover:translate-x-1"
             />
           </Link>
@@ -498,6 +525,7 @@ function Solutions() {
 
               <ArrowRight
                 size={16}
+                aria-hidden="true"
                 className="transition-transform duration-300 group-hover:translate-x-1"
               />
             </Link>

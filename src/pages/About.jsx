@@ -1,4 +1,9 @@
-import { ArrowRight, Database, Brain, Layers3 } from "lucide-react";
+import {
+  ArrowRight,
+  Database,
+  Brain,
+  Layers3,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 function About() {
@@ -10,10 +15,14 @@ function About() {
       ========================================================= */}
       <section className="border-b border-black/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
+          <div className="grid gap-16 lg:grid-cols-12 lg:items-end">
+
             <div className="lg:col-span-8">
               <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-black" />
+                <span
+                  className="h-px w-8 bg-black"
+                  aria-hidden="true"
+                />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   About Blue Scouts Group
@@ -31,6 +40,7 @@ function About() {
                 structured intelligence through data, technology and analysis.
               </p>
             </div>
+
           </div>
         </div>
       </section>
@@ -45,7 +55,10 @@ function About() {
 
             <div className="lg:col-span-3">
               <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-black" />
+                <span
+                  className="h-px w-8 bg-black"
+                  aria-hidden="true"
+                />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   Who We Are
@@ -74,6 +87,7 @@ function About() {
                 </p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -88,7 +102,10 @@ function About() {
 
             <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-black" />
+                <span
+                  className="h-px w-8 bg-black"
+                  aria-hidden="true"
+                />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   What We Believe
@@ -150,6 +167,7 @@ function About() {
 
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -163,7 +181,10 @@ function About() {
 
           <div className="max-w-3xl">
             <div className="flex items-center gap-3">
-              <span className="h-px w-8 bg-black" />
+              <span
+                className="h-px w-8 bg-black"
+                aria-hidden="true"
+              />
 
               <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                 How We Build
@@ -175,12 +196,15 @@ function About() {
             </h2>
           </div>
 
-
           <div className="mt-16 grid gap-px overflow-hidden border border-black/10 bg-black/10 md:grid-cols-3">
 
             {/* Data */}
             <div className="bg-white p-8 lg:p-10">
-              <Database size={26} strokeWidth={1.5} />
+              <Database
+                size={26}
+                strokeWidth={1.5}
+                aria-hidden="true"
+              />
 
               <span className="mt-12 block text-xs font-medium tracking-[0.18em] text-black/35">
                 01
@@ -196,10 +220,13 @@ function About() {
               </p>
             </div>
 
-
             {/* Technology */}
             <div className="bg-white p-8 lg:p-10">
-              <Layers3 size={26} strokeWidth={1.5} />
+              <Layers3
+                size={26}
+                strokeWidth={1.5}
+                aria-hidden="true"
+              />
 
               <span className="mt-12 block text-xs font-medium tracking-[0.18em] text-black/35">
                 02
@@ -215,10 +242,13 @@ function About() {
               </p>
             </div>
 
-
             {/* Intelligence */}
             <div className="bg-white p-8 lg:p-10">
-              <Brain size={26} strokeWidth={1.5} />
+              <Brain
+                size={26}
+                strokeWidth={1.5}
+                aria-hidden="true"
+              />
 
               <span className="mt-12 block text-xs font-medium tracking-[0.18em] text-black/35">
                 03
@@ -249,7 +279,10 @@ function About() {
 
             <div className="lg:col-span-8">
               <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-white" />
+                <span
+                  className="h-px w-8 bg-white"
+                  aria-hidden="true"
+                />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-white/40">
                   Our Focus
@@ -263,7 +296,7 @@ function About() {
             </div>
 
             <div className="lg:col-span-4">
-              <p className="text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
+              <p className="max-w-md text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
                 Our work is centered around practical applications of data,
                 software and intelligent analysis.
               </p>
@@ -277,7 +310,7 @@ function About() {
       {/* =========================================================
           CTA
       ========================================================= */}
-      <section className="bg-[#fafafa]">
+      <section className="border-t border-black/10 bg-[#fafafa]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
 
           <div className="flex flex-col gap-8 border-t border-black/10 pt-12 sm:flex-row sm:items-end sm:justify-between">
@@ -300,6 +333,7 @@ function About() {
 
               <ArrowRight
                 size={16}
+                aria-hidden="true"
                 className="transition-transform duration-300 group-hover:translate-x-1"
               />
             </Link>
