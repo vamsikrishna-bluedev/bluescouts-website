@@ -96,10 +96,10 @@ export default function Contact() {
                 Email
               </p>
               <a
-                href="mailto:hello@bluescoutsgroup.com"
+                href="mailto:svamsikrishnasatvik@bluescoutsgroup.org"
                 className="mt-3 inline-flex items-center gap-2 text-lg font-medium transition-opacity hover:opacity-60"
               >
-                hello@bluescoutsgroup.com
+                svamsikrishnasatvik@bluescoutsgroup.org
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
@@ -141,7 +141,7 @@ export default function Contact() {
 
             <div className="mt-10">
               <a
-                href="mailto:hello@bluescoutsgroup.com"
+                href="mailto:svamsikrishnasatvik@bluescoutsgroup.org"
                 className="group inline-flex items-center gap-3 bg-black px-6 py-4 text-sm font-medium text-white transition-transform hover:-translate-y-0.5"
               >
                 <Mail className="h-4 w-4" />
@@ -261,10 +261,10 @@ export default function Contact() {
             </div>
 
             <a
-              href="mailto:hello@bluescoutsgroup.com"
+              href="mailto:svamsikrishnasatvik@bluescoutsgroup.org"
               className="inline-flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-60"
             >
-              hello@bluescoutsgroup.com
+              svamsikrishnasatvik@bluescoutsgroup.org
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
