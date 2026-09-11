@@ -1,29 +1,36 @@
 import {
   ArrowRight,
-  ArrowUpRight,
   Mail,
-  Building2,
+  MessageSquare,
+  MoveUpRight,
+  Briefcase,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const enquiryTypes = [
-  "Business / Solutions",
-  "Stock Intelligence",
-  "Partnership",
-  "General Enquiry",
+  {
+    title: "General Enquiry",
+    description:
+      "Questions about Blue Scouts Group, our work or what we are building.",
+    icon: MessageSquare,
+  },
+  {
+    title: "Stock Analysis",
+    description:
+      "Questions about our Stock Analysis platform and its analytical workflow.",
+    icon: Briefcase,
+  },
+  {
+    title: "Project Discussion",
+    description:
+      "Discuss a data, software, AI or analytical problem you are looking to solve.",
+    icon: ArrowRight,
+  },
 ];
 
 function Contact() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    alert(
-      "Thank you for contacting Blue Scouts Group. We'll get back to you soon."
-    );
-  };
-
   return (
-    <main className="bg-white text-black">
+    <main className="min-h-screen bg-white text-black">
       {/* =========================================================
           HERO
       ========================================================= */}
@@ -32,13 +39,10 @@ function Contact() {
           <div className="grid gap-16 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
               <div className="flex items-center gap-3">
-                <span
-                  className="h-px w-8 bg-black"
-                  aria-hidden="true"
-                />
+                <span className="h-px w-8 bg-black" />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
-                  Contact Blue Scouts Group
+                  Contact
                 </span>
               </div>
 
@@ -47,14 +51,15 @@ function Contact() {
                 <br />
                 something
                 <br />
-                intelligent.
+                useful.
               </h1>
             </div>
 
             <div className="lg:col-span-4">
               <p className="max-w-md text-base leading-7 text-black/55 sm:text-lg sm:leading-8">
-                Have a project, partnership opportunity or question about
-                Blue Scouts Group? We'd like to hear from you.
+                Have a question, project idea or problem worth exploring?
+                Tell us what you are working on and let's start a
+                conversation.
               </p>
             </div>
           </div>
@@ -62,18 +67,15 @@ function Contact() {
       </section>
 
       {/* =========================================================
-          CONTACT INFORMATION
+          CONTACT FORM / ENQUIRY
       ========================================================= */}
       <section>
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <div className="grid gap-16 lg:grid-cols-12 lg:gap-20">
+          <div className="grid gap-16 lg:grid-cols-12">
             {/* Left */}
             <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
-                <span
-                  className="h-px w-8 bg-black"
-                  aria-hidden="true"
-                />
+                <span className="h-px w-8 bg-black" />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   Get in Touch
@@ -81,132 +83,51 @@ function Contact() {
               </div>
 
               <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-                Start a conversation.
+                Tell us what you are working on.
               </h2>
 
               <p className="mt-6 max-w-md text-base leading-7 text-black/50">
-                Whether you're interested in our solutions, Stock Intelligence,
-                a partnership or simply want to learn more, reach out to our
-                team.
+                Whether you are interested in Stock Analysis, software
+                development, data systems or a new project, we would like to
+                understand the problem first.
               </p>
+
+              {/* Email */}
+              <div className="mt-10 border-t border-black/10 pt-6">
+                <div className="flex items-center gap-3">
+                  <Mail
+                    size={18}
+                    strokeWidth={1.5}
+                    className="text-black/40"
+                  />
+
+                  <span className="text-xs uppercase tracking-[0.18em] text-black/35">
+                    Email
+                  </span>
+                </div>
+
+                <a
+                  href="mailto:hello@bluescoutsgroup.com"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-medium transition-colors hover:text-black/60"
+                >
+                  hello@bluescoutsgroup.com
+
+                  <MoveUpRight
+                    size={14}
+                    className="text-black/35"
+                  />
+                </a>
+              </div>
             </div>
 
             {/* Right */}
-            <div className="lg:col-span-6 lg:col-start-7">
-              <div className="divide-y divide-black/10 border-y border-black/10">
-                {/* Email */}
-                <a
-                  href="mailto:svamsikrishnasatvik@bluescotusgroup.org"
-                  aria-label="Email Blue Scouts Group"
-                  className="group flex items-center justify-between gap-6 py-8"
-                >
-                  <div className="flex items-start gap-5">
-                    <div
-                      className="flex h-11 w-11 shrink-0 items-center justify-center border border-black/10"
-                      aria-hidden="true"
-                    >
-                      <Mail size={19} strokeWidth={1.5} />
-                    </div>
-
-                    <div>
-                      <span className="text-xs uppercase tracking-[0.18em] text-black/35">
-                        Email
-                      </span>
-
-                      <p className="mt-2 break-all text-base font-medium sm:text-lg">
-                        svamsikrishnasatvik@bluescotusgroup.org
-                      </p>
-                    </div>
-                  </div>
-
-                  <ArrowUpRight
-                    size={19}
-                    strokeWidth={1.5}
-                    aria-hidden="true"
-                    className="shrink-0 text-black/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                  />
-                </a>
-
-                {/* Website */}
-                <a
-                  href="https://bluescoutsgroup.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit Blue Scouts Group website"
-                  className="group flex items-center justify-between gap-6 py-8"
-                >
-                  <div className="flex items-start gap-5">
-                    <div
-                      className="flex h-11 w-11 shrink-0 items-center justify-center border border-black/10"
-                      aria-hidden="true"
-                    >
-                      <Building2 size={19} strokeWidth={1.5} />
-                    </div>
-
-                    <div>
-                      <span className="text-xs uppercase tracking-[0.18em] text-black/35">
-                        Website
-                      </span>
-
-                      <p className="mt-2 text-lg font-medium">
-                        bluescoutsgroup.org
-                      </p>
-                    </div>
-                  </div>
-
-                  <ArrowUpRight
-                    size={19}
-                    strokeWidth={1.5}
-                    aria-hidden="true"
-                    className="shrink-0 text-black/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          CONTACT FORM
-      ========================================================= */}
-      <section className="border-y border-black/10 bg-[#fafafa]">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <div className="grid gap-16 lg:grid-cols-12 lg:gap-20">
-            {/* Form heading */}
-            <div className="lg:col-span-4">
-              <div className="flex items-center gap-3">
-                <span
-                  className="h-px w-8 bg-black"
-                  aria-hidden="true"
-                />
-
-                <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
-                  Send a Message
-                </span>
-              </div>
-
-              <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-                Tell us what you're working on.
-              </h2>
-
-              <p className="mt-6 max-w-md text-base leading-7 text-black/50">
-                Share a little about your project or enquiry and we'll have
-                the right conversation from there.
-              </p>
-            </div>
-
-            {/* Form */}
             <div className="lg:col-span-7 lg:col-start-6">
-              <form
-                className="space-y-8"
-                onSubmit={handleSubmit}
-              >
+              <form className="border border-black/10">
                 {/* Name */}
-                <div>
+                <div className="border-b border-black/10 p-6 sm:p-8">
                   <label
                     htmlFor="name"
-                    className="mb-3 block text-xs font-medium uppercase tracking-[0.18em] text-black/40"
+                    className="block text-xs font-medium uppercase tracking-[0.18em] text-black/40"
                   >
                     Name
                   </label>
@@ -216,18 +137,15 @@ function Contact() {
                     name="name"
                     type="text"
                     placeholder="Your name"
-                    autoComplete="name"
-                    required
-                    aria-required="true"
-                    className="w-full border-0 border-b border-black/15 bg-transparent px-0 py-4 text-base outline-none placeholder:text-black/25 focus:border-black"
+                    className="mt-4 w-full border-0 bg-transparent p-0 text-lg outline-none placeholder:text-black/25 focus:ring-0"
                   />
                 </div>
 
                 {/* Email */}
-                <div>
+                <div className="border-b border-black/10 p-6 sm:p-8">
                   <label
                     htmlFor="email"
-                    className="mb-3 block text-xs font-medium uppercase tracking-[0.18em] text-black/40"
+                    className="block text-xs font-medium uppercase tracking-[0.18em] text-black/40"
                   >
                     Email
                   </label>
@@ -237,37 +155,15 @@ function Contact() {
                     name="email"
                     type="email"
                     placeholder="you@example.com"
-                    autoComplete="email"
-                    required
-                    aria-required="true"
-                    className="w-full border-0 border-b border-black/15 bg-transparent px-0 py-4 text-base outline-none placeholder:text-black/25 focus:border-black"
-                  />
-                </div>
-
-                {/* Company */}
-                <div>
-                  <label
-                    htmlFor="company"
-                    className="mb-3 block text-xs font-medium uppercase tracking-[0.18em] text-black/40"
-                  >
-                    Company
-                  </label>
-
-                  <input
-                    id="company"
-                    name="company"
-                    type="text"
-                    placeholder="Company name"
-                    autoComplete="organization"
-                    className="w-full border-0 border-b border-black/15 bg-transparent px-0 py-4 text-base outline-none placeholder:text-black/25 focus:border-black"
+                    className="mt-4 w-full border-0 bg-transparent p-0 text-lg outline-none placeholder:text-black/25 focus:ring-0"
                   />
                 </div>
 
                 {/* Enquiry */}
-                <div>
+                <div className="border-b border-black/10 p-6 sm:p-8">
                   <label
                     htmlFor="enquiry"
-                    className="mb-3 block text-xs font-medium uppercase tracking-[0.18em] text-black/40"
+                    className="block text-xs font-medium uppercase tracking-[0.18em] text-black/40"
                   >
                     Enquiry Type
                   </label>
@@ -276,27 +172,28 @@ function Contact() {
                     id="enquiry"
                     name="enquiry"
                     defaultValue=""
-                    required
-                    aria-required="true"
-                    className="w-full border-0 border-b border-black/15 bg-transparent px-0 py-4 text-base outline-none focus:border-black"
+                    className="mt-4 w-full border-0 bg-transparent p-0 text-lg outline-none focus:ring-0"
                   >
                     <option value="" disabled>
-                      Select an enquiry type
+                      Select an option
                     </option>
 
                     {enquiryTypes.map((type) => (
-                      <option key={type} value={type}>
-                        {type}
+                      <option
+                        key={type.title}
+                        value={type.title}
+                      >
+                        {type.title}
                       </option>
                     ))}
                   </select>
                 </div>
 
                 {/* Message */}
-                <div>
+                <div className="border-b border-black/10 p-6 sm:p-8">
                   <label
                     htmlFor="message"
-                    className="mb-3 block text-xs font-medium uppercase tracking-[0.18em] text-black/40"
+                    className="block text-xs font-medium uppercase tracking-[0.18em] text-black/40"
                   >
                     Message
                   </label>
@@ -304,27 +201,30 @@ function Contact() {
                   <textarea
                     id="message"
                     name="message"
-                    rows="5"
-                    placeholder="Tell us a little about what you have in mind..."
-                    required
-                    aria-required="true"
-                    className="w-full resize-none border-0 border-b border-black/15 bg-transparent px-0 py-4 text-base outline-none placeholder:text-black/25 focus:border-black"
+                    rows="6"
+                    placeholder="Tell us a little about what you are working on..."
+                    className="mt-4 w-full resize-none border-0 bg-transparent p-0 text-lg leading-7 outline-none placeholder:text-black/25 focus:ring-0"
                   />
                 </div>
 
                 {/* Submit */}
-                <button
-                  type="submit"
-                  className="group inline-flex items-center gap-3 rounded-full bg-black px-7 py-3.5 text-sm font-medium text-white transition-transform duration-300 hover:-translate-y-0.5"
-                >
-                  Send Message
+                <div className="flex items-center justify-between gap-6 p-6 sm:p-8">
+                  <p className="max-w-sm text-xs leading-5 text-black/35">
+                    We will review your message and get back to you.
+                  </p>
 
-                  <ArrowRight
-                    size={16}
-                    aria-hidden="true"
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </button>
+                  <button
+                    type="submit"
+                    className="group inline-flex shrink-0 items-center gap-3 rounded-full bg-black px-6 py-3.5 text-sm font-medium text-white transition-transform duration-300 hover:-translate-y-0.5"
+                  >
+                    Send Message
+
+                    <ArrowRight
+                      size={16}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -332,37 +232,102 @@ function Contact() {
       </section>
 
       {/* =========================================================
-          PLATFORM CTA
+          ENQUIRY TYPES
+      ========================================================= */}
+      <section className="border-y border-black/10 bg-[#fafafa]">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-3">
+              <span className="h-px w-8 bg-black" />
+
+              <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
+                What Can We Discuss?
+              </span>
+            </div>
+
+            <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
+              Start with the problem.
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-7 text-black/50">
+              A clear understanding of the problem helps us identify the right
+              data, technology and approach.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-px overflow-hidden border border-black/10 bg-black/10 md:grid-cols-3">
+            {enquiryTypes.map((type, index) => {
+              const Icon = type.icon;
+
+              return (
+                <div
+                  key={type.title}
+                  className="bg-white p-8 lg:p-10"
+                >
+                  <div className="flex items-start justify-between">
+                    <Icon
+                      size={26}
+                      strokeWidth={1.5}
+                      className="text-black/55"
+                    />
+
+                    <span className="text-xs tracking-[0.18em] text-black/35">
+                      0{index + 1}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-16 text-xl font-semibold tracking-tight">
+                    {type.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-6 text-black/55">
+                    {type.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          STOCK ANALYSIS CTA
       ========================================================= */}
       <section>
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <div className="border-t border-black/10 pt-12">
-            <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
-              <div className="lg:col-span-8">
-                <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/40">
-                  Stock Intelligence
+          <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-8">
+              <div className="flex items-center gap-3">
+                <span className="h-px w-8 bg-black" />
+
+                <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
+                  Stock Analysis
                 </span>
-
-                <h2 className="mt-5 max-w-3xl text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-                  Interested in how we turn complex market information into
-                  intelligence?
-                </h2>
               </div>
 
-              <div className="lg:col-span-4 lg:flex lg:justify-end">
-                <Link
-                  to="/stock-intelligence"
-                  className="group inline-flex w-fit items-center gap-3 rounded-full border border-black/15 px-6 py-3.5 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:bg-black hover:text-white"
-                >
-                  Explore the Platform
+              <h2 className="mt-8 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
+                Interested in how we turn market data into structured
+                analysis?
+              </h2>
 
-                  <ArrowRight
-                    size={16}
-                    aria-hidden="true"
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </Link>
-              </div>
+              <p className="mt-6 max-w-2xl text-base leading-7 text-black/50">
+                Explore the Stock Analysis workflow and see how market data,
+                extracted information and analytical processing come together.
+              </p>
+            </div>
+
+            <div className="lg:col-span-4 lg:flex lg:justify-end">
+              <Link
+                to="/stock-analysis"
+                className="group inline-flex items-center gap-3 rounded-full bg-black px-6 py-3.5 text-sm font-medium text-white transition-transform duration-300 hover:-translate-y-0.5"
+              >
+                Explore Stock Analysis
+
+                <ArrowRight
+                  size={16}
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </Link>
             </div>
           </div>
         </div>

@@ -7,8 +7,8 @@ const navigation = [
   { name: "About", path: "/about" },
   { name: "Solutions", path: "/solutions" },
   {
-    name: "Stock Intelligence",
-    path: "/stock-intelligence",
+    name: "Stock Analysis",
+    path: "/stock-analysis",
   },
   { name: "Insights", path: "/insights" },
   { name: "Contact", path: "/contact" },
@@ -67,10 +67,10 @@ function Navbar() {
 
           {/* CTA */}
           <Link
-            to="/stock-intelligence"
+            to="/stock-analysis"
             className="group flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition-transform hover:-translate-y-0.5"
           >
-            Explore Platform
+            Explore Stock Analysis
 
             <ArrowUpRight
               size={15}
@@ -122,11 +122,11 @@ function Navbar() {
             ))}
 
             <Link
-              to="/stock-intelligence"
+              to="/stock-analysis"
               onClick={closeMenu}
               className="mt-5 flex items-center justify-center gap-2 rounded-full bg-black px-5 py-3 text-sm font-medium text-white"
             >
-              Explore Platform
+              Explore Stock Analysis
 
               <ArrowUpRight
                 size={15}

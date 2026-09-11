@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/home";
 import About from "./pages/About";
 import Solutions from "./pages/Solutions";
-import StockIntelligence from "./pages/StockIntelligence";
+import StockAnalysis from "./pages/StockAnalysis";
 import Insights from "./pages/Insights";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -20,8 +20,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route
-          path="/stock-intelligence"
-          element={<StockIntelligence />}
+          path="/stock-analysis"
+          element={<StockAnalysis />}
         />
         <Route path="/insights" element={<Insights />} />
         <Route path="/contact" element={<Contact />} />

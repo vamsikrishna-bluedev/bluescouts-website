@@ -3,15 +3,14 @@ import {
   BarChart3,
   Brain,
   FileText,
-  Image,
-  Newspaper,
+  Database,
   Search,
   Sparkles,
   TrendingUp,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-function StockIntelligence() {
+function StockAnalysis() {
   return (
     <main className="min-h-screen bg-white text-black">
       {/* =========================================================
@@ -26,22 +25,22 @@ function StockIntelligence() {
                 <span className="h-px w-8 bg-black" />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
-                  Blue Scouts Intelligence
+                  Blue Scouts Group
                 </span>
               </div>
 
               <h1 className="mt-8 max-w-5xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] sm:text-6xl lg:text-8xl">
-                Market intelligence,
+                Stock analysis,
                 <br />
-                connected.
+                structured.
               </h1>
             </div>
 
             {/* Hero Description */}
             <div className="lg:col-span-4">
               <p className="max-w-md text-base leading-7 text-black/55 sm:text-lg sm:leading-8">
-                Stock Intelligence brings market data, documents, news,
-                historical information and events together to create a
+                Stock Analysis brings together market data, extracted
+                information and analytical processing to create a clearer,
                 structured view of a stock.
               </p>
 
@@ -68,12 +67,12 @@ function StockIntelligence() {
               <div className="border-b border-black/10 p-7 sm:p-10 lg:col-span-8 lg:border-b-0 lg:border-r">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-medium uppercase tracking-[0.18em] text-black/35">
-                    Intelligence Overview
+                    Analysis Overview
                   </span>
 
                   <span className="flex items-center gap-2 text-xs text-black/40">
                     <span className="h-1.5 w-1.5 rounded-full bg-black/50" />
-                    Multi-source analysis
+                    Structured analysis
                   </span>
                 </div>
 
@@ -85,41 +84,41 @@ function StockIntelligence() {
                     </span>
 
                     <p className="mt-6 text-2xl font-semibold">
-                      Connected
+                      Processed
                     </p>
 
                     <div className="mt-5 h-px bg-black/10">
-                      <div className="h-px w-[82%] bg-black/50" />
+                      <div className="mt-5 h-px bg-black/10" />
                     </div>
                   </div>
 
-                  {/* News */}
+                  {/* Data Extraction */}
                   <div className="border border-black/10 bg-white p-5">
                     <span className="text-xs text-black/35">
-                      News & Events
+                      Data Extraction
                     </span>
 
                     <p className="mt-6 text-2xl font-semibold">
-                      Analyzed
+                      Structured
                     </p>
 
                     <div className="mt-5 h-px bg-black/10">
-                      <div className="h-px w-[68%] bg-black/50" />
+                      <div className="mt-5 h-px bg-black/10" />
                     </div>
                   </div>
 
-                  {/* Documents */}
+                  {/* Data Analysis */}
                   <div className="border border-black/10 bg-white p-5">
                     <span className="text-xs text-black/35">
-                      Documents
+                      Data Analysis
                     </span>
 
                     <p className="mt-6 text-2xl font-semibold">
-                      Extracted
+                      Organized
                     </p>
 
                     <div className="mt-5 h-px bg-black/10">
-                      <div className="h-px w-[74%] bg-black/50" />
+                      <div className="mt-5 h-px bg-black/10" />
                     </div>
                   </div>
                 </div>
@@ -142,7 +141,7 @@ function StockIntelligence() {
                   <div className="w-full max-w-xs border border-white/15 p-5">
                     <div className="flex items-center justify-between">
                       <span className="text-xs uppercase tracking-[0.18em] text-white/35">
-                        Stock Reading
+                        Stock Overview
                       </span>
 
                       <TrendingUp
@@ -165,11 +164,11 @@ function StockIntelligence() {
 
                     <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
                       <span className="text-xs text-white/35">
-                        Context
+                        Analysis
                       </span>
 
                       <span className="text-xs text-white/60">
-                        Connected signals
+                        Structured view
                       </span>
                     </div>
                   </div>
@@ -196,21 +195,21 @@ function StockIntelligence() {
               </div>
 
               <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-                Market information rarely exists in one place.
+                Market information is often spread across different sources.
               </h2>
             </div>
 
             <div className="lg:col-span-7 lg:col-start-6">
               <p className="text-xl leading-8 text-black/65 sm:text-2xl sm:leading-9">
-                A stock can be affected by financial information, company
-                events, historical movement, market conditions, documents and
-                developments reported across different sources.
+                Understanding a stock can require working with market data,
+                historical information, company documents and other relevant
+                sources.
               </p>
 
               <p className="mt-7 max-w-2xl text-base leading-7 text-black/50">
-                Stock Intelligence is designed to bring these different
-                information sources into a common analytical workflow, making
-                it easier to examine the context surrounding a stock.
+                Stock Analysis is designed to organize these inputs into a
+                common analytical workflow, making it easier to process the
+                available information and examine a stock in context.
               </p>
             </div>
           </div>
@@ -218,7 +217,7 @@ function StockIntelligence() {
       </section>
 
       {/* =========================================================
-          DATA SOURCES
+          DATA & ANALYSIS
       ========================================================= */}
       <section className="border-y border-black/10 bg-[#fafafa]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
@@ -227,12 +226,12 @@ function StockIntelligence() {
               <span className="h-px w-8 bg-black" />
 
               <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
-                Connected Information
+                Data & Analysis
               </span>
             </div>
 
             <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-              Different sources. One intelligence workflow.
+              Different inputs. One analysis workflow.
             </h2>
           </div>
 
@@ -250,12 +249,12 @@ function StockIntelligence() {
               </h3>
 
               <p className="mt-3 text-sm leading-6 text-black/55">
-                Relevant stock information and historical market data used to
-                understand price and market behavior.
+                Relevant stock information and historical market data used for
+                analysis.
               </p>
             </div>
 
-            {/* Documents */}
+            {/* Data Extraction */}
             <div className="bg-white p-8 lg:p-10">
               <FileText size={26} strokeWidth={1.5} />
 
@@ -264,52 +263,52 @@ function StockIntelligence() {
               </span>
 
               <h3 className="mt-4 text-xl font-semibold tracking-tight">
-                Documents
+                Data Extraction
               </h3>
 
               <p className="mt-3 text-sm leading-6 text-black/55">
-                Uploaded documents can be processed to extract information
-                relevant to the stock being investigated.
+                Information from uploaded documents and source material can be
+                extracted and prepared for further processing.
               </p>
             </div>
 
-            {/* OCR */}
+            {/* Data Processing */}
             <div className="bg-white p-8 lg:p-10">
-              <Image size={26} strokeWidth={1.5} />
+              <Database size={26} strokeWidth={1.5} />
 
               <span className="mt-14 block text-xs tracking-[0.18em] text-black/35">
                 03
               </span>
 
               <h3 className="mt-4 text-xl font-semibold tracking-tight">
-                OCR Extraction
+                Data Processing
               </h3>
 
               <p className="mt-3 text-sm leading-6 text-black/55">
-                Information contained within uploaded images can be extracted
-                and converted into structured information.
+                Collected information is organized and processed into a form
+                that can be analyzed consistently.
               </p>
             </div>
 
-            {/* News */}
+            {/* Data Analysis */}
             <div className="bg-white p-8 lg:p-10">
-              <Newspaper size={26} strokeWidth={1.5} />
+              <Brain size={26} strokeWidth={1.5} />
 
               <span className="mt-14 block text-xs tracking-[0.18em] text-black/35">
                 04
               </span>
 
               <h3 className="mt-4 text-xl font-semibold tracking-tight">
-                News
+                Data Analysis
               </h3>
 
               <p className="mt-3 text-sm leading-6 text-black/55">
-                Relevant news and developments provide additional context
-                around a company and its market environment.
+                Processed information can be examined to identify patterns,
+                relationships and relevant signals.
               </p>
             </div>
 
-            {/* Events */}
+            {/* Decision Support */}
             <div className="bg-white p-8 lg:p-10">
               <Search size={26} strokeWidth={1.5} />
 
@@ -318,30 +317,30 @@ function StockIntelligence() {
               </span>
 
               <h3 className="mt-4 text-xl font-semibold tracking-tight">
-                Events & Context
+                Decision Support
               </h3>
 
               <p className="mt-3 text-sm leading-6 text-black/55">
-                Relevant events and surrounding information can be considered
-                alongside stock and company data.
+                Structured analysis helps users review the available
+                information and make more informed assessments.
               </p>
             </div>
 
-            {/* Intelligence */}
+            {/* Analysis Reports */}
             <div className="bg-white p-8 lg:p-10">
-              <Brain size={26} strokeWidth={1.5} />
+              <FileText size={26} strokeWidth={1.5} />
 
               <span className="mt-14 block text-xs tracking-[0.18em] text-black/35">
                 06
               </span>
 
               <h3 className="mt-4 text-xl font-semibold tracking-tight">
-                Intelligent Analysis
+                Analysis Reports
               </h3>
 
               <p className="mt-3 text-sm leading-6 text-black/55">
-                Connected information can be analyzed to produce a structured
-                interpretation of the available signals.
+                Relevant findings can be presented through a structured report
+                for easier review and understanding.
               </p>
             </div>
           </div>
@@ -349,7 +348,7 @@ function StockIntelligence() {
       </section>
 
       {/* =========================================================
-          PIPELINE
+          ANALYSIS WORKFLOW
       ========================================================= */}
       <section>
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
@@ -359,17 +358,17 @@ function StockIntelligence() {
                 <span className="h-px w-8 bg-black" />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
-                  Intelligence Pipeline
+                  Analysis Workflow
                 </span>
               </div>
 
               <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-                From information to intelligence.
+                From data to decision support.
               </h2>
 
               <p className="mt-6 max-w-md text-base leading-7 text-black/50">
-                The platform connects multiple stages of the information
-                lifecycle instead of treating each source independently.
+                The workflow is designed to move information through clear
+                stages of extraction, processing and analysis.
               </p>
             </div>
 
@@ -387,8 +386,8 @@ function StockIntelligence() {
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-6 text-black/55">
-                      Bring together stock information, documents, news,
-                      historical data and relevant events.
+                      Bring together the market data and source information
+                      required for analysis.
                     </p>
                   </div>
                 </div>
@@ -405,8 +404,8 @@ function StockIntelligence() {
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-6 text-black/55">
-                      Extract useful information from uploaded images and
-                      documents using OCR and data-processing workflows.
+                      Extract useful information from supported documents and
+                      source material.
                     </p>
                   </div>
                 </div>
@@ -419,12 +418,12 @@ function StockIntelligence() {
 
                   <div>
                     <h3 className="text-2xl font-semibold tracking-tight">
-                      Connect
+                      Process
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-6 text-black/55">
-                      Relate extracted information to historical movement,
-                      news, events and other relevant stock context.
+                      Organize and prepare the collected information for
+                      consistent analysis.
                     </p>
                   </div>
                 </div>
@@ -441,8 +440,8 @@ function StockIntelligence() {
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-6 text-black/55">
-                      Examine relationships between available information and
-                      identify relevant signals and potential implications.
+                      Examine the available information to identify relevant
+                      patterns, relationships and signals.
                     </p>
                   </div>
                 </div>
@@ -455,12 +454,12 @@ function StockIntelligence() {
 
                   <div>
                     <h3 className="text-2xl font-semibold tracking-tight">
-                      Report
+                      Support
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-6 text-black/55">
-                      Present the resulting stock reading and supporting
-                      intelligence through a structured report.
+                      Present the resulting analysis in a structured form that
+                      supports review and decision-making.
                     </p>
                   </div>
                 </div>
@@ -481,7 +480,7 @@ function StockIntelligence() {
                 <span className="h-px w-8 bg-white" />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-white/40">
-                  Stock Reading
+                  Decision Support
                 </span>
               </div>
 
@@ -490,9 +489,9 @@ function StockIntelligence() {
               </h2>
 
               <p className="mt-6 max-w-xl text-base leading-7 text-white/50">
-                The platform organizes relevant information into a structured
-                reading so users can understand the context behind the
-                available signals.
+                Stock Analysis organizes available information into a
+                structured view so users can examine the context behind the
+                data.
               </p>
             </div>
 
@@ -517,15 +516,15 @@ function StockIntelligence() {
                 </div>
 
                 <div className="mt-6 space-y-5">
-                  {/* Historical */}
+                  {/* Market Data */}
                   <div>
                     <div className="flex justify-between text-xs">
                       <span className="text-white/40">
-                        Historical context
+                        Market data
                       </span>
 
                       <span className="text-white/60">
-                        Reviewed
+                        Processed
                       </span>
                     </div>
 
@@ -534,15 +533,15 @@ function StockIntelligence() {
                     </div>
                   </div>
 
-                  {/* News */}
+                  {/* Extracted Data */}
                   <div>
                     <div className="flex justify-between text-xs">
                       <span className="text-white/40">
-                        News context
+                        Extracted data
                       </span>
 
                       <span className="text-white/60">
-                        Connected
+                        Structured
                       </span>
                     </div>
 
@@ -551,11 +550,11 @@ function StockIntelligence() {
                     </div>
                   </div>
 
-                  {/* Events */}
+                  {/* Analysis */}
                   <div>
                     <div className="flex justify-between text-xs">
                       <span className="text-white/40">
-                        Event context
+                        Data analysis
                       </span>
 
                       <span className="text-white/60">
@@ -585,12 +584,12 @@ function StockIntelligence() {
                 <span className="h-px w-8 bg-black" />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
-                  Intelligence Report
+                  Analysis Report
                 </span>
               </div>
 
               <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-                Intelligence presented with context.
+                Analysis presented with context.
               </h2>
             </div>
 
@@ -601,7 +600,7 @@ function StockIntelligence() {
                   <div className="flex items-center justify-between">
                     <div>
                       <span className="text-xs uppercase tracking-[0.18em] text-black/35">
-                        Stock Intelligence Report
+                        Stock Analysis Report
                       </span>
 
                       <h3 className="mt-3 text-2xl font-semibold tracking-tight">
@@ -621,7 +620,7 @@ function StockIntelligence() {
                 <div className="grid sm:grid-cols-2">
                   <div className="border-b border-black/10 p-6 sm:border-r sm:p-8">
                     <span className="text-xs text-black/35">
-                      Market context
+                      Market data
                     </span>
 
                     <p className="mt-3 text-sm leading-6 text-black/60">
@@ -631,11 +630,11 @@ function StockIntelligence() {
 
                   <div className="border-b border-black/10 p-6 sm:p-8">
                     <span className="text-xs text-black/35">
-                      News & events
+                      Data processing
                     </span>
 
                     <p className="mt-3 text-sm leading-6 text-black/60">
-                      Relevant developments connected to the company or stock.
+                      Processed information organized for further analysis.
                     </p>
                   </div>
 
@@ -645,18 +644,18 @@ function StockIntelligence() {
                     </span>
 
                     <p className="mt-3 text-sm leading-6 text-black/60">
-                      Information extracted from uploaded source material.
+                      Information extracted from supported source material.
                     </p>
                   </div>
 
                   <div className="border-b border-black/10 p-6 sm:p-8">
                     <span className="text-xs text-black/35">
-                      Potential implications
+                      Analysis
                     </span>
 
                     <p className="mt-3 text-sm leading-6 text-black/60">
-                      Analytical interpretation of how connected information
-                      may relate to the stock.
+                      Analytical interpretation of the available information
+                      and relevant signals.
                     </p>
                   </div>
                 </div>
@@ -671,9 +670,9 @@ function StockIntelligence() {
                     />
 
                     <p className="text-sm leading-6 text-black/55">
-                      The report is designed to organize available evidence and
-                      context. It does not guarantee future market outcomes or
-                      constitute financial advice.
+                      The report is designed to organize available information
+                      and analysis. It does not guarantee future market
+                      outcomes or constitute financial advice.
                     </p>
                   </div>
                 </div>
@@ -695,7 +694,7 @@ function StockIntelligence() {
               </span>
 
               <h2 className="mt-5 max-w-2xl text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">
-                Intelligence begins with better information.
+                Better data supports better decisions.
               </h2>
             </div>
 
@@ -717,4 +716,4 @@ function StockIntelligence() {
   );
 }
 
-export default StockIntelligence;
+export default StockAnalysis;

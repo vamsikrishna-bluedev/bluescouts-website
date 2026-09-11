@@ -54,10 +54,10 @@ function NotFound() {
                   </Link>
 
                   <Link
-                    to="/stock-intelligence"
+                    to="/stock-analysis"
                     className="group inline-flex items-center gap-3 rounded-full border border-black/15 px-6 py-3.5 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:bg-black hover:text-white"
                   >
-                    Explore Platform
+                    Explore Stock Analysis
 
                     <ArrowUpRight
                       size={16}
@@ -73,7 +73,7 @@ function NotFound() {
             <div className="mt-24 border-t border-black/10 pt-6 sm:mt-32">
               <div className="flex items-center justify-between text-xs uppercase tracking-[0.18em] text-black/30">
                 <span>Blue Scouts Group</span>
-                <span>Intelligence • Data • Technology</span>
+                <span>Data • Analysis • Technology</span>
               </div>
             </div>
           </div>

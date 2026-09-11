@@ -3,62 +3,57 @@ import {
   Database,
   Brain,
   Layers3,
+  
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <main className="bg-white text-black">
-
+    <main className="min-h-screen bg-white text-black">
       {/* =========================================================
           HERO
       ========================================================= */}
       <section className="border-b border-black/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
           <div className="grid gap-16 lg:grid-cols-12 lg:items-end">
-
             <div className="lg:col-span-8">
               <div className="flex items-center gap-3">
-                <span
-                  className="h-px w-8 bg-black"
-                  aria-hidden="true"
-                />
+                <span className="h-px w-8 bg-black" />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   About Blue Scouts Group
                 </span>
               </div>
 
-              <h1 className="mt-8 max-w-5xl text-5xl font-semibold leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
-                Building intelligent solutions from complex information.
+              <h1 className="mt-8 max-w-5xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] sm:text-6xl lg:text-8xl">
+                Building practical
+                <br />
+                solutions from
+                <br />
+                complex information.
               </h1>
             </div>
 
             <div className="lg:col-span-4">
               <p className="max-w-md text-base leading-7 text-black/55 sm:text-lg sm:leading-8">
-                Blue Scouts Group focuses on turning complex information into
-                structured intelligence through data, technology and analysis.
+                Blue Scouts Group works with data, technology and software to
+                create systems that make complex information easier to
+                process, analyze and use.
               </p>
             </div>
-
           </div>
         </div>
       </section>
 
-
       {/* =========================================================
-          COMPANY OVERVIEW
+          WHO WE ARE
       ========================================================= */}
       <section>
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
           <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
-
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
-                <span
-                  className="h-px w-8 bg-black"
-                  aria-hidden="true"
-                />
+                <span className="h-px w-8 bg-black" />
 
                 <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   Who We Are
@@ -66,282 +61,335 @@ function About() {
               </div>
             </div>
 
-            <div className="lg:col-span-8 lg:col-start-5">
+            <div className="lg:col-span-7 lg:col-start-6">
               <h2 className="max-w-4xl text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-                Blue Scouts Group is focused on building practical
-                intelligence systems for complex problems.
+                A technology group focused on making complex information
+                useful.
               </h2>
 
-              <div className="mt-8 max-w-3xl space-y-5 text-base leading-7 text-black/60 sm:text-lg sm:leading-8">
-                <p>
-                  We work with information that can be difficult to collect,
-                  organize and understand. Our approach combines data,
-                  technology and analytical methods to make that information
-                  more useful.
-                </p>
+              <p className="mt-8 max-w-2xl text-lg leading-8 text-black/60">
+                We build data-driven systems that connect information,
+                software and analytical workflows.
+              </p>
 
-                <p>
-                  Rather than treating data as isolated points, we look at the
-                  relationships between information, context and events to
-                  develop a clearer picture of the problem being examined.
-                </p>
-              </div>
+              <p className="mt-6 max-w-2xl text-base leading-7 text-black/50">
+                Our work spans data processing, information extraction,
+                analysis and software development. The goal is simple:
+                transform difficult information into structured outputs that
+                people can understand and work with.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-base leading-7 text-black/50">
+                We approach each problem from the underlying data and
+                requirements first, then design the technology needed to
+                deliver a practical solution.
+              </p>
             </div>
-
           </div>
         </div>
       </section>
-
 
       {/* =========================================================
           WHAT WE BELIEVE
       ========================================================= */}
       <section className="border-y border-black/10 bg-[#fafafa]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-3">
+              <span className="h-px w-8 bg-black" />
 
-            <div className="lg:col-span-4">
-              <div className="flex items-center gap-3">
-                <span
-                  className="h-px w-8 bg-black"
-                  aria-hidden="true"
-                />
-
-                <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
-                  What We Believe
-                </span>
-              </div>
-
-              <h2 className="mt-8 max-w-md text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-                Better information leads to better understanding.
-              </h2>
+              <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
+                What We Believe
+              </span>
             </div>
 
-            <div className="lg:col-span-6 lg:col-start-7">
-              <div className="space-y-10">
+            <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
+              Good technology starts with good understanding.
+            </h2>
+          </div>
 
-                <div className="border-t border-black/10 pt-7">
-                  <span className="text-xs font-medium tracking-[0.18em] text-black/35">
-                    01
-                  </span>
+          <div className="mt-16 grid gap-px overflow-hidden border border-black/10 bg-black/10 md:grid-cols-3">
+            {/* Information */}
+            <div className="bg-white p-8 lg:p-10">
+              <Database
+                size={28}
+                strokeWidth={1.5}
+              />
 
-                  <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-                    Information
-                  </h3>
+              <h3 className="mt-16 text-2xl font-semibold tracking-tight">
+                Information
+              </h3>
 
-                  <p className="mt-3 max-w-xl text-sm leading-6 text-black/55">
-                    Relevant information needs to be collected and organized
-                    before it can provide meaningful insight.
-                  </p>
-                </div>
-
-                <div className="border-t border-black/10 pt-7">
-                  <span className="text-xs font-medium tracking-[0.18em] text-black/35">
-                    02
-                  </span>
-
-                  <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-                    Intelligence
-                  </h3>
-
-                  <p className="mt-3 max-w-xl text-sm leading-6 text-black/55">
-                    Context and relationships can reveal signals that are not
-                    visible when information is viewed independently.
-                  </p>
-                </div>
-
-                <div className="border-t border-black/10 pt-7">
-                  <span className="text-xs font-medium tracking-[0.18em] text-black/35">
-                    03
-                  </span>
-
-                  <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-                    Clarity
-                  </h3>
-
-                  <p className="mt-3 max-w-xl text-sm leading-6 text-black/55">
-                    Intelligence becomes valuable when it can be communicated
-                    clearly and used to understand a decision or problem.
-                  </p>
-                </div>
-
-              </div>
+              <p className="mt-4 text-sm leading-6 text-black/55">
+                Every solution begins with understanding the information
+                involved, where it comes from and how it should be used.
+              </p>
             </div>
 
+            {/* Analysis */}
+            <div className="bg-white p-8 lg:p-10">
+              <Brain
+                size={28}
+                strokeWidth={1.5}
+              />
+
+              <h3 className="mt-16 text-2xl font-semibold tracking-tight">
+                Analysis
+              </h3>
+
+              <p className="mt-4 text-sm leading-6 text-black/55">
+                Structured analysis helps turn large or complex information
+                into something more useful and understandable.
+              </p>
+            </div>
+
+            {/* Clarity */}
+            <div className="bg-white p-8 lg:p-10">
+              <Layers3
+                size={28}
+                strokeWidth={1.5}
+              />
+
+              <h3 className="mt-16 text-2xl font-semibold tracking-tight">
+                Clarity
+              </h3>
+
+              <p className="mt-4 text-sm leading-6 text-black/55">
+                The final system should make information easier to access,
+                interpret and act upon.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
 
       {/* =========================================================
           HOW WE BUILD
       ========================================================= */}
       <section>
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+          <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+            <div className="lg:col-span-4">
+              <div className="flex items-center gap-3">
+                <span className="h-px w-8 bg-black" />
 
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-3">
-              <span
-                className="h-px w-8 bg-black"
-                aria-hidden="true"
-              />
+                <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
+                  How We Build
+                </span>
+              </div>
 
-              <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
-                How We Build
-              </span>
-            </div>
+              <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
+                Connecting data, technology and analysis.
+              </h2>
 
-            <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
-              Connecting data, technology and intelligence.
-            </h2>
-          </div>
-
-          <div className="mt-16 grid gap-px overflow-hidden border border-black/10 bg-black/10 md:grid-cols-3">
-
-            {/* Data */}
-            <div className="bg-white p-8 lg:p-10">
-              <Database
-                size={26}
-                strokeWidth={1.5}
-                aria-hidden="true"
-              />
-
-              <span className="mt-12 block text-xs font-medium tracking-[0.18em] text-black/35">
-                01
-              </span>
-
-              <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-                Data
-              </h3>
-
-              <p className="mt-4 text-sm leading-6 text-black/55">
-                Collecting, extracting and organizing information from
-                relevant sources.
+              <p className="mt-6 max-w-md text-base leading-7 text-black/50">
+                We treat the data layer, software layer and analytical layer
+                as connected parts of the same solution.
               </p>
             </div>
 
-            {/* Technology */}
-            <div className="bg-white p-8 lg:p-10">
-              <Layers3
-                size={26}
-                strokeWidth={1.5}
-                aria-hidden="true"
-              />
+            <div className="lg:col-span-7 lg:col-start-6">
+              <div className="grid gap-px overflow-hidden border border-black/10 bg-black/10">
+                {/* Data */}
+                <div className="bg-white p-8 sm:p-10">
+                  <div className="flex items-start justify-between gap-8">
+                    <div>
+                      <span className="text-xs font-medium tracking-[0.18em] text-black/35">
+                        01
+                      </span>
 
-              <span className="mt-12 block text-xs font-medium tracking-[0.18em] text-black/35">
-                02
-              </span>
+                      <h3 className="mt-5 text-2xl font-semibold tracking-tight">
+                        Data
+                      </h3>
 
-              <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-                Technology
-              </h3>
+                      <p className="mt-4 max-w-xl text-sm leading-6 text-black/55">
+                        We design reliable ways to collect, process, structure
+                        and store information.
+                      </p>
+                    </div>
 
-              <p className="mt-4 text-sm leading-6 text-black/55">
-                Applying software and intelligent systems to transform
-                information into usable outputs.
-              </p>
+                    <Database
+                      size={25}
+                      strokeWidth={1.5}
+                      className="shrink-0 text-black/35"
+                    />
+                  </div>
+                </div>
+
+                {/* Technology */}
+                <div className="bg-white p-8 sm:p-10">
+                  <div className="flex items-start justify-between gap-8">
+                    <div>
+                      <span className="text-xs font-medium tracking-[0.18em] text-black/35">
+                        02
+                      </span>
+
+                      <h3 className="mt-5 text-2xl font-semibold tracking-tight">
+                        Technology
+                      </h3>
+
+                      <p className="mt-4 max-w-xl text-sm leading-6 text-black/55">
+                        We build the software, backend services and interfaces
+                        required to turn the underlying data flow into a
+                        working product.
+                      </p>
+                    </div>
+
+                    <Layers3
+                      size={25}
+                      strokeWidth={1.5}
+                      className="shrink-0 text-black/35"
+                    />
+                  </div>
+                </div>
+
+                {/* Analysis */}
+                <div className="bg-white p-8 sm:p-10">
+                  <div className="flex items-start justify-between gap-8">
+                    <div>
+                      <span className="text-xs font-medium tracking-[0.18em] text-black/35">
+                        03
+                      </span>
+
+                      <h3 className="mt-5 text-2xl font-semibold tracking-tight">
+                        Analysis
+                      </h3>
+
+                      <p className="mt-4 max-w-xl text-sm leading-6 text-black/55">
+                        We apply analytical methods where they add value,
+                        helping transform processed information into useful
+                        outputs.
+                      </p>
+                    </div>
+
+                    <Brain
+                      size={25}
+                      strokeWidth={1.5}
+                      className="shrink-0 text-black/35"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-
-            {/* Intelligence */}
-            <div className="bg-white p-8 lg:p-10">
-              <Brain
-                size={26}
-                strokeWidth={1.5}
-                aria-hidden="true"
-              />
-
-              <span className="mt-12 block text-xs font-medium tracking-[0.18em] text-black/35">
-                03
-              </span>
-
-              <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-                Intelligence
-              </h3>
-
-              <p className="mt-4 text-sm leading-6 text-black/55">
-                Relating information and context to produce clearer,
-                structured insights.
-              </p>
-            </div>
-
           </div>
         </div>
       </section>
-
 
       {/* =========================================================
           OUR FOCUS
       ========================================================= */}
-      <section className="border-t border-black/10 bg-black text-white">
+      <section className="border-y border-black/10 bg-[#fafafa]">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-
-          <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
-
-            <div className="lg:col-span-8">
+          <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+            <div className="lg:col-span-4">
               <div className="flex items-center gap-3">
-                <span
-                  className="h-px w-8 bg-white"
-                  aria-hidden="true"
-                />
+                <span className="h-px w-8 bg-black" />
 
-                <span className="text-xs font-medium uppercase tracking-[0.22em] text-white/40">
+                <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/45">
                   Our Focus
                 </span>
               </div>
 
-              <h2 className="mt-8 max-w-4xl text-4xl font-semibold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
-                Building systems that make complex information easier to
-                understand.
+              <h2 className="mt-8 text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl">
+                Practical systems for complex problems.
               </h2>
             </div>
 
-            <div className="lg:col-span-4">
-              <p className="max-w-md text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
-                Our work is centered around practical applications of data,
-                software and intelligent analysis.
+            <div className="lg:col-span-7 lg:col-start-6">
+              <p className="text-xl leading-8 text-black/65 sm:text-2xl sm:leading-9">
+                We focus on building technology that has a clear purpose,
+                understandable workflows and a useful outcome.
               </p>
-            </div>
 
+              <div className="mt-10 grid gap-8 sm:grid-cols-2">
+                <div className="border-t border-black/10 pt-5">
+                  <span className="text-xs uppercase tracking-[0.18em] text-black/35">
+                    Data Systems
+                  </span>
+
+                  <p className="mt-3 text-sm leading-6 text-black/55">
+                    Reliable data pipelines and structured information flows.
+                  </p>
+                </div>
+
+                <div className="border-t border-black/10 pt-5">
+                  <span className="text-xs uppercase tracking-[0.18em] text-black/35">
+                    Analytical Systems
+                  </span>
+
+                  <p className="mt-3 text-sm leading-6 text-black/55">
+                    Workflows that help examine complex information and
+                    identify useful patterns.
+                  </p>
+                </div>
+
+                <div className="border-t border-black/10 pt-5">
+                  <span className="text-xs uppercase tracking-[0.18em] text-black/35">
+                    Software
+                  </span>
+
+                  <p className="mt-3 text-sm leading-6 text-black/55">
+                    Interfaces and backend systems designed around practical
+                    requirements.
+                  </p>
+                </div>
+
+                <div className="border-t border-black/10 pt-5">
+                  <span className="text-xs uppercase tracking-[0.18em] text-black/35">
+                    Decision Support
+                  </span>
+
+                  <p className="mt-3 text-sm leading-6 text-black/55">
+                    Structured outputs that make complex information easier to
+                    review and use.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
 
       {/* =========================================================
           CTA
       ========================================================= */}
-      <section className="border-t border-black/10 bg-[#fafafa]">
+      <section>
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+          <div className="border-t border-black/10 pt-12">
+            <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
+              <div className="lg:col-span-8">
+                <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/40">
+                  Work With Us
+                </span>
 
-          <div className="flex flex-col gap-8 border-t border-black/10 pt-12 sm:flex-row sm:items-end sm:justify-between">
+                <h2 className="mt-6 max-w-4xl text-4xl font-semibold leading-[1.04] tracking-[-0.04em] sm:text-5xl lg:text-6xl">
+                  Let's build something useful.
+                </h2>
 
-            <div>
-              <span className="text-xs font-medium uppercase tracking-[0.22em] text-black/40">
-                Get in Touch
-              </span>
+                <p className="mt-6 max-w-2xl text-base leading-7 text-black/50">
+                  Have a complex data, software or analytical problem? Tell us
+                  what you are trying to solve and we can explore the right
+                  approach.
+                </p>
+              </div>
 
-              <h2 className="mt-5 max-w-2xl text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">
-                Let's build something intelligent.
-              </h2>
+              <div className="lg:col-span-4 lg:flex lg:justify-end">
+                <Link
+                  to="/contact"
+                  className="group inline-flex items-center gap-3 rounded-full bg-black px-6 py-3.5 text-sm font-medium text-white transition-transform duration-300 hover:-translate-y-0.5"
+                >
+                  Get in Touch
+
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </Link>
+              </div>
             </div>
-
-            <Link
-              to="/contact"
-              className="group inline-flex w-fit items-center gap-3 rounded-full bg-black px-6 py-3.5 text-sm font-medium text-white transition-transform duration-300 hover:-translate-y-0.5"
-            >
-              Contact Blue Scouts Group
-
-              <ArrowRight
-                size={16}
-                aria-hidden="true"
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              />
-            </Link>
-
           </div>
         </div>
       </section>
-
     </main>
   );
 }
